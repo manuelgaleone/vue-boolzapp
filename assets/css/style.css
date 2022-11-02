@@ -34,6 +34,10 @@ body {
     color: gray;
 }
 
+.color_white {
+    background-color: white;
+}
+
 .notify_popup {
     background-color: #8EDAFC;
 }
@@ -59,3 +63,22 @@ body {
     text-decoration: underline;
 }
 
+.search_bar {
+    padding: 5px;
+    background-color: #EAEAEA;
+}
+
+.search_contacts {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.search_bar_elements {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.lens_left {
+    border-right: 1px solid lightgray;
+}
