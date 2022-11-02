@@ -52,7 +52,7 @@
                     <div class="chat_list">
                         <div class="chat_list_elements d_flex column">
                             <div v-for="(contact, i) in contacts" class="chat d_flex">
-                                <img class="avatar_chat" :src="{{contact.avatar}}" alt="Avatar Image">
+                                <img class="avatar_chat" :src="contact.avatar" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name m-0">
                                         {{contact.name}}
