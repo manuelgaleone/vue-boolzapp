@@ -25,6 +25,10 @@ body{
     align-items: center;
 }
 
+.around {
+    justify-content: space-around;
+}
+
 .avatar_user {
     width: 50px;
     border-radius: 50%;
@@ -35,7 +39,7 @@ body{
 }
 
 .main_container {
-   margin-top: auto;
+   margin: auto auto;
 }
 
 /*Header Left*/
@@ -125,7 +129,7 @@ body{
 }
 
 .chat_header_elements {
-    border-left: 1px solid gray;
+    border-left: 1px solid lightgray;
 }
 
 .user_name {
@@ -133,5 +137,12 @@ body{
 }
 
 .last_access {
-    font-size: 10px;
+    font-size: 13px;
+    margin: 0;
+    color: gray;
+}
+
+.user_name {
+    font-size: 17px;
+    margin: 0;
 }

@@ -19,7 +19,7 @@
                 <div id="left_contacts_bar" class="col-xxl-5 col-xl-5 col-lg-5 g-0">
                     <div class="header_user_info d_flex align_items justify-content-between">
                         <div class="user_info d_flex align_items">
-                            <img class="avatar_user" src="./assets/img/avatar_me.jpg" alt="">
+                            <img class="avatar_user" src="./assets/img/avatar_me.jpg" alt="Avatar Image">
                             <span class="px-2">Sofia</span>
                         </div>
                         <div class="user_settings_icons d_flex align_items">
@@ -32,9 +32,11 @@
                         <div class="notify_elements d_flex align_items">
                             <i class="fa-solid fa-bell-slash bell"></i>
                             <div class="notify_texts px-3">
-                                <p>
-                                    Ricevi notifiche di nuovi messaggi <br>
-                                    <span class="notify_desktop ">Attiva notifiche desktop</span>
+                                <p class="m-0">
+                                    Ricevi notifiche di nuovi messaggi
+                                </p>
+                                <p class="notify_desktop">
+                                    Attiva notifiche desktop
                                 </p>
                             </div>
                         </div>
@@ -50,7 +52,19 @@
                     <div class="chat_list">
                         <div class="chat_list_elements d_flex column">
                             <div class="chat d_flex active">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
+                                <div class="chat_info px-4">
+                                    <p class="chat_name m-0">
+                                        Michele <br>
+                                    </p>
+                                    <p class="color_gray last_message m-0">Ultimo messaggio inviato</p>
+                                    <p class="color_gray time">
+                                        12:00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="chat d_flex">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -62,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -74,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -86,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -98,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -110,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -122,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
+                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name">
                                         Michele <br>
@@ -133,29 +147,29 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="chat d_flex">
-                                <img class="avatar_chat" src="./assets/img/avatar_1.jpg" alt="">
-                                <div class="chat_info px-4">
-                                    <p class="chat_name">
-                                        Michele <br>
-                                        <span class="color_gray last_message">Ultimo messaggio inviato</span>
-                                    </p>
-                                    <p class="color_gray time">
-                                        12:00
-                                    </p>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div id="right_message_space" class="col-xxl-7 col-xl-7 col-lg-7 g-0">
                     <div class="chat_header_container color_white">
-                        <div class="row">
-
-                        </div>
-                        <div class="chat_header_elements header_user_info d_flex align_items">
-                            <img class="avatar_user" src="./assets/img/avatar_1.jpg" alt="">
-                            
+                        <div class="chat_header_elements header_user_info d_flex align_items around">
+                            <div class="col-8 d_flex align_items">
+                                <img class="avatar_user" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
+                                <div class="chat_user_info px-3">
+                                    <p class="user_name">
+                                        Michele
+                                    </p>
+                                    <p class="last_access">
+                                        Ultimo accesso oggi alle 12:00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-4 d_flex align_items justify-content-end">
+                                <i class="fa-solid fa-magnifying-glass color_gray px-3"></i>
+                                <i class="fa-solid fa-paperclip color_gray"></i>
+                                <i class="fa-solid fa-ellipsis-vertical color_gray px-3"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
