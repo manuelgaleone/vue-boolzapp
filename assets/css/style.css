@@ -33,3 +33,29 @@ body {
 .color_gray {
     color: gray;
 }
+
+.notify_popup {
+    background-color: #8EDAFC;
+}
+
+.notify_elements {
+    padding: 20px;
+}
+
+.notify_texts {
+    padding-top: 10px;
+}
+
+.bell {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    color: #8EDAFC;
+    font-size: 30px;
+}
+
+.notify_desktop {
+    color: gray;
+    text-decoration: underline;
+}
+
