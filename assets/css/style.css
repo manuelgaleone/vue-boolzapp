@@ -1,11 +1,12 @@
 /*General Settings*/
-body {
-    background-color: #DADBD4;
-}
-
-.back_header {
-    height: 200px;
-    background-color: #009688;
+body{
+    height: 100vh;
+    background:linear-gradient(
+        to top,
+        #DADBD4 85%,
+        #009688 15%
+    );
+    background-repeat: no-repeat;
 }
 
 .color_gray {
@@ -31,6 +32,10 @@ body {
 
 .column {
     flex-direction: column;
+}
+
+.main_container {
+   margin-top: auto;
 }
 
 /*Header Left*/
@@ -71,7 +76,7 @@ body {
 
 .search_bar {
     padding: 5px;
-    background-color: #EAEAEA;
+    background-color: #FAFAFA;
 }
 
 .search_contacts {
