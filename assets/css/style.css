@@ -9,6 +9,10 @@ body{
     background-repeat: no-repeat;
 }
 
+.main_container {
+    padding-top: 20px;
+}
+
 .color_gray {
     color: gray;
 }
