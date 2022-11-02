@@ -1,0 +1,35 @@
+/*General Settings*/
+body {
+    background-color: #DADBD4;
+}
+
+.back_header {
+    height: 200px;
+    background-color: #009688;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.align_items {
+    align-items: center;
+}
+
+.avatar_user {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header_user_info {
+    padding: 7px;
+    background-color: #EAEAEA;
+}
+
+.user_settings_icons {
+    font-size: 22px;
+}
+
+.color_gray {
+    color: gray;
+}
