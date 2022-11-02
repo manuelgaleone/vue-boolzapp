@@ -25,6 +25,14 @@ body{
     align-items: center;
 }
 
+.align_right {
+    align-items: flex-end;
+}
+
+.align_left {
+    align-items: flex-start;
+}
+
 .around {
     justify-content: space-around;
 }
@@ -149,4 +157,43 @@ body{
 
 .chat_main_container {
     background-image: url(../img/mine.jpg);
-    height: 930px
+    object-fit: cover;
+    height: 100%;
+    overflow: scroll;
+    max-height:max-content;
+    position: relative;
+}
+
+.sent {
+    background-color: #D5F9BA;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #D5F9BA;
+    max-width: 450px;
+    position: relative;
+    margin-left: 300px;
+}
+
+.received {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 450px;
+    position: relative;
+    max-height: max-content;
+}
+
+.message_time {
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    padding-right: 10px;
+    top: 35px;
+}
+
+.message_text {
+    padding-right: 75px;
+}
+
