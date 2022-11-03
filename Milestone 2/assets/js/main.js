@@ -35,7 +35,7 @@ const { createApp } = Vue;
         contacts: [
             {
                 name: "Michele",
-                avatar: "../assets/img/avatar_1.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_1.jpg",
                 visible: true,
                 messages: [
                     {
@@ -57,7 +57,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Fabio",
-                avatar: "../assets/img/avatar_2.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_2.jpg",
                 visible: true,
                 messages: [
                     {
@@ -79,7 +79,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Samuele",
-                avatar: "../assets/img/avatar_3.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_3.jpg",
                 visible: true,
                 messages: [
                     {
@@ -101,7 +101,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Alessandro B.",
-                avatar: "../assets/img/avatar_4.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_4.jpg",
                 visible: true,
                 messages: [
                     {
@@ -118,7 +118,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Alessandro L.",
-                avatar: "../assets/img/avatar_5.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_5.jpg",
                 visible: true,
                 messages: [
                     {
@@ -135,7 +135,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Claudia",
-                avatar: "../assets/img/avatar_6.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_6.jpg",
                 visible: true,
                 messages: [
                     {
@@ -157,7 +157,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Federico",
-                avatar: "../assets/img/avatar_7.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_7.jpg",
                 visible: true,
                 messages: [
                     {
@@ -174,7 +174,7 @@ const { createApp } = Vue;
             },
             {
                 name: "Davide",
-                avatar: "../assets/img/avatar_8.jpg",
+                avatar: "../Milestone 2/assets/img/avatar_8.jpg",
                 visible: true,
                 messages: [
                     {
@@ -195,10 +195,15 @@ const { createApp } = Vue;
                 ],
             }
         ],
-        activeIndex: 0,
-
-        
+        activeIndex: "",
       }
-    }
+    },
+    methods: {
+        setActiveIndex(i) {
+            
+            this.activeIndex = i;
+        
+        },
+    },
   }).mount('#app')
 

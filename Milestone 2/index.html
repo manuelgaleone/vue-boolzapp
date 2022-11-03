@@ -51,7 +51,7 @@
                     </div>
                     <div class="chat_list">
                         <div class="chat_list_elements d_flex column">
-                            <div v-for="(contact, i) in contacts" class="chat d_flex" :class="i === activeIndex ? 'active' : ''">
+                            <div @click="setActiveIndex(i)" v-for="(contact, i) in contacts" class="chat d_flex" :class="i === activeIndex ? 'active' : ''">
                                 <img class="avatar_chat" :src="contact.avatar" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name m-0">
@@ -89,9 +89,10 @@
                         </div>
                     </div>
                     <div class="chat_main_container">
-                        <div class="message sent my-4 align_right">
+                        
+                        <div v-for="(message, i) in contacts.messages" class="message sent my-4 align_right">
                             <p class="message_text">
-                                ciao sono manuel come stai?
+                                {{message}}
                             </p>
                             <p class="message_time">
                                 13:00
