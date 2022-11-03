@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="chat_main_container">
-                        <div v-for="(message, i) in contacts[activeIndex].messages" :class="contacts[activeIndex].messages[activeIndex].status === 'sent' ? 'sent' : 'received'" class="message my-4 align_right">
+                        <div v-for="(message, i) in contacts[activeIndex].messages" :class="{received: message.status === 'received', sent: message.status === 'sent'}" class="message my-4 align_right">
                             <p class="message_text">
                                 {{message.message}}
                             </p>
