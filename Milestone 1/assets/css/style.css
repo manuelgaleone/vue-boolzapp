@@ -118,6 +118,7 @@ body{
 /*Right Sidebar*/
 .chat {
     padding: 15px;
+    overflow: auto;
 }
 
 .avatar_chat {
