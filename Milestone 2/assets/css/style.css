@@ -192,6 +192,7 @@ body{
     max-width: 450px;
     position: relative;
     max-height: max-content;
+    margin-left: 20px;
 }
 
 .footer_icon {
