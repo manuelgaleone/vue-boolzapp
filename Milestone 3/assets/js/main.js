@@ -195,7 +195,7 @@ const { createApp } = Vue;
                 ],
             }
         ],
-        messages: "",
+        inputText: "",
         activeIndex: 0,
       }
     },
@@ -205,9 +205,30 @@ const { createApp } = Vue;
             this.activeIndex = i;
         
         },
-        addMessage() {
-
-        }
+        newMessage() {
+        
+            if (this.inputText.length > 0) {
+        
+                this.contacts[this.activeIndex].messages.push({
+        
+                    text: this.inputText,
+                    status: 'sent',
+    
+                    },
+                    );
+        
+                    setTimeout(() => {
+                        
+                        this.contacts[this.activeIndex].messages.push({
+                            
+                            text: 'Ok',
+                            status: 'received',
+                            },
+                            );
+                    }, 1000) 
+            }
+                
+        },
     },
   }).mount('#app')
 
