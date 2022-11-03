@@ -72,9 +72,9 @@
                         <div class="chat_header_elements header_user_info d_flex align_items around">
                             <div class="col-8 d_flex align_items">
                                 <img class="avatar_user" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
-                                <div class="chat_user_info px-3">
+                                <div v-for="(contact, i) in contacts" class="chat_user_info px-3">
                                     <p class="user_name">
-                                        Michele
+                                        {{contacts[i].name}}
                                     </p>
                                     <p class="last_access">
                                         Ultimo accesso oggi alle 12:00
@@ -90,17 +90,9 @@
                     </div>
                     <div class="chat_main_container">
                         
-                        <div v-for="(message, i) in contacts.messages" class="message sent my-4 align_right">
+                        <div :class="messages.status === sent ? 'sent' : 'received'" v-for="(message, i) in contacts.messages" class="message sent my-4 align_right">
                             <p class="message_text">
-                                {{message}}
-                            </p>
-                            <p class="message_time">
-                                13:00
-                            </p>
-                        </div>
-                        <div class="message received my-4 mx-4 justify-content-end">
-                            <p class="message_text">
-                                ciao sono manuel come stai? tutto bene a casa?
+                                {{messages.message}}
                             </p>
                             <p class="message_time">
                                 13:00
