@@ -52,7 +52,7 @@
                     <div class="chat_list">
                         <div class="chat_list_elements d_flex column">
                             <div v-for="(contact, i) in contacts" class="chat d_flex" :class="i === activeIndex ? 'active' : ''">
-                                <img class="avatar_chat" :src="contact.avatar" alt="Avatar Image">
+                                <img class="avatar_chat" :src="`./assets/img/avatar${contacts[i].avatar}.jpg`" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name m-0">
                                         {{contact.name}}
@@ -71,7 +71,7 @@
                     <div class="chat_header_container color_white">
                         <div class="chat_header_elements header_user_info d_flex align_items around">
                             <div class="col-8 d_flex align_items">
-                                <img class="avatar_user" src="./assets/img/avatar_1.jpg" alt="Avatar Image">
+                                <img class="avatar_user" :src="`./assets/img/avatar${contacts[activeIndex].avatar}.jpg`" alt="Avatar Image">
                                 <div class="chat_user_info px-3">
                                     <p class="user_name">
                                         Michele
