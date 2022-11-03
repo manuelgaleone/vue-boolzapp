@@ -195,7 +195,7 @@ const { createApp } = Vue;
                 ],
             }
         ],
-        activeIndex: "",
+        activeIndex: 0,
       }
     },
     methods: {
