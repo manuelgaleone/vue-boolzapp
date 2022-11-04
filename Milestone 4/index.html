@@ -46,7 +46,8 @@
                             <div class="lens_left">
                                 <i class="fa-solid fa-magnifying-glass color_gray px-3"></i>
                             </div>
-                            <input id="searchInput" class="search_contacts px-3" type="text" placeholder="Cerca una Chat" @click="searchContacts">
+                            <input id="searchChats" class="search_contacts px-3" type="text"
+                            placeholder="Cerca una Persona o una Chat" v-model="searchUser" @keyup="searchInput()">
                         </div>
                     </div>
                     <div class="chat_list">

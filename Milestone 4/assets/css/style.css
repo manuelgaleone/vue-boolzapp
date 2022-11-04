@@ -118,7 +118,7 @@ body{
 /*Right Sidebar*/
 .chat {
     padding: 15px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .avatar_chat {
@@ -170,7 +170,7 @@ body{
     background-image: url(../img/mine.jpg);
     object-fit: cover;
     height: calc(1050px - 64px - 78px);
-    overflow: scroll;
+    overflow: auto;
     max-height:max-content;
     position: relative;
 }

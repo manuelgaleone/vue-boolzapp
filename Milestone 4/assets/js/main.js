@@ -35,7 +35,7 @@ const { createApp } = Vue;
 
         inputText: "",
         activeIndex: 0,
-        searchChat: '',
+        searchUser: '',
 
         contacts: [
             {
@@ -210,6 +210,7 @@ const { createApp } = Vue;
             this.activeIndex = i;
         
         },
+        
         newMessage() {
         
             if (this.inputText.length > 0) {
@@ -235,24 +236,48 @@ const { createApp } = Vue;
                     }, 1000) 
                 }
                 
-            },
         },
-        searchContacts() {
+        
+        /*filteredList() {
 
-            
-           for (let i = 0; i < this.contacts.length; i++ ) {
+            for (let i = 0; i < this.contacts.length; i++ ) {
 
-               if (this.contacts[i].name.toLowerCase().includes(this.searchChat.value.toLowerCase())) {
-                   
-                   this.contacts[i].visible = true;
+                if (this.contacts[i].name.toLowerCase().includes(this.searchChat.value.toLowerCase())) {
+                    
+                    this.contacts[i].visible = true;
             
                 } else {
 
-                   this.contacts[i].visible = false;
+                    this.contacts[i].visible = faslse;
+        
+                }}
+        }, */
+
+        searchInput() {
             
+           for (let i = 0; i < this.contacts.length; i++ ) {
+
+               if (this.contacts[i].name.toLowerCase().includes(this.searchUser.toLowerCase())) {
+            
+                   this.contacts[i].visible = true;
+            
+                } else {
+                   
+                    this.contacts[i].visible = false;
+               
                 }
            }
             
-        },
+        }
+
+        /* filteredList() {
+
+            return contacts.filter((contact) =>
+                
+            contact.toLowerCase().includes(search.value.toLowerCase())
+        
+        )}, */
+
+    }
     }).mount('#app')
 
