@@ -211,6 +211,7 @@ const { createApp } = Vue;
         
                 this.contacts[this.activeIndex].messages.push({
         
+                    dateLux: "10/01/2020 17:30:55",
                     text: this.inputText,
                     status: 'sent',
     
@@ -221,14 +222,15 @@ const { createApp } = Vue;
                         
                         this.contacts[this.activeIndex].messages.push({
                             
+                            dateLux: "10/01/2020 17:30:55",
                             text: 'Ok',
                             status: 'received',
-                            },
-                            );
+                        },
+                        );
                     }, 1000) 
-            }
+                }
                 
+            },
         },
-    },
-  }).mount('#app')
+    }).mount('#app')
 
