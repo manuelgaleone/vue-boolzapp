@@ -52,7 +52,7 @@
                     </div>
                     <div class="chat_list">
                         <div class="chat_list_elements d_flex column">
-                            <div @click="setActiveIndex(i)" v-for="(contact, i) in contacts" class="chat d_flex" :class="i === activeIndex ? 'active' : ''">
+                            <div @click="setActiveIndex(i)" v-for="(contact, i) in contacts" class="chat d_flex" :class="i === activeIndex ? 'active' : ''" v-show="contact.visible">
                                 <img class="avatar_chat" :src="`./assets/img/avatar${contacts[i].avatar}.jpg`" alt="Avatar Image">
                                 <div class="chat_info px-4">
                                     <p class="chat_name m-0">
